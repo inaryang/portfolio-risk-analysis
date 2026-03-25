@@ -16,21 +16,22 @@ The goal is to identify optimal portfolios using the Sharpe ratio and visualize 
 
 ## Methods
 
-- Retrieved historical price data using `yfinance`
-- Computed daily returns for each asset
-- Constructed multiple portfolios with predefined weights
-- Simulated 10,000 random portfolios with normalized weights
-- Calculated annualized return and volatility
-- Evaluated performance using the Sharpe ratio
+- Retrieved historical adjusted closing prices using `yfinance`
+- Computed daily simple returns for each asset
+- Constructed baseline portfolios with predefined weight allocations
+- Implemented a Monte Carlo simulation of 10,000 randomly generated portfolios (weights normalized to sum to 1)
+- Calculated annualized return and volatility (assuming 252 trading days)
+- Evaluated portfolio performance using the Sharpe ratio
+- Visualized the efficient frontier and identified the maximum Sharpe ratio portfolio
 
 ---
 
-## Results
+## Results and Analysis
 
 - The S&P 500 ETF (SPY) achieved the highest Sharpe ratio among manually constructed portfolios
-- Higher-return assets (e.g., AAPL) exhibited significantly higher volatility, reducing risk-adjusted performance
-- Simulated portfolios identified allocations with improved Sharpe ratios compared to naive weightings
-- These results highlight that optimal portfolio construction requires balancing return and volatility, not simply maximizing returns
+- Individual equities (e.g., AAPL) generated higher raw returns but exhibited substantially higher volatility, reducing risk-adjusted performance
+- Diversified portfolios reduced volatility but did not outperform SPY under naive weighting schemes
+- Simulation identified portfolios with superior Sharpe ratios, demonstrating that optimal allocation requires systematic optimization rather than heuristic diversification
 
 ---
 
