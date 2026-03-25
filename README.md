@@ -1,16 +1,15 @@
 # Portfolio Optimization and Efficient Frontier Analysis
-
-This project analyzes portfolio construction using historical market data from Yahoo Finance. 
-It evaluates multiple asset allocations and simulates 10,000 random portfolios to study the tradeoff between return and risk.
-
+This project investigates portfolio construction using historical equity data from Yahoo Finance.
+It evaluates multiple asset allocations and simulates 10,000 random portfolios to study the tradeoff between expected return and volatility.
 The goal is to identify optimal portfolios using the Sharpe ratio and visualize the efficient frontier.
 
 ---
 
-## Assets Analyzed
-- AAPL
-- MSFT
-- SPY
+## Assets
+
+- AAPL (Apple Inc.)
+- MSFT (Microsoft Corp.)
+- SPY (S&P 500 ETF)
 
 ---
 
@@ -32,17 +31,29 @@ The goal is to identify optimal portfolios using the Sharpe ratio and visualize 
 - Individual equities (e.g., AAPL) generated higher raw returns but exhibited substantially higher volatility, reducing risk-adjusted performance
 - Diversified portfolios reduced volatility but did not outperform SPY under naive weighting schemes
 - Simulation identified portfolios with superior Sharpe ratios, demonstrating that optimal allocation requires systematic optimization rather than heuristic diversification
+  
+- Maximum Sharpe portfolio: Sharpe ≈ 0.59, Return ≈ 10.60%, Volatility ≈ 17.93%
+- Optimal weights: AAPL 4.01%, MSFT 0.28%, SPY 95.71%
+
+The optimal portfolio is heavily weighted toward SPY, reflecting its lower volatility and strong risk-adjusted performance relative to individual equities.
+
+---
+
+## Interpretation
+
+This analysis demonstrates that portfolio performance must be evaluated on a risk-adjusted basis. 
+While individual assets may generate higher returns, their volatility reduces overall efficiency. 
+Monte Carlo simulation enables systematic exploration of the allocation space, revealing portfolios that outperform naive allocations.
 
 ---
 
 ## Visualizations
 
 ### Manual Portfolio Growth
-Shows cumulative returns of different portfolio allocations over time.
+![Manual Portfolio Growth](manual_portfolios.png)
 
 ### Efficient Frontier
-Displays the distribution of 10,000 simulated portfolios in return-volatility space, with color representing Sharpe ratio.  
-The maximum Sharpe portfolio is highlighted.
+![Efficient Frontier](efficient_frontier.png)
 
 ---
 
