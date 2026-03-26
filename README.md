@@ -18,7 +18,7 @@ The goal is to identify optimal portfolios using the Sharpe ratio and visualize 
 - Retrieved historical adjusted closing prices using `yfinance`
 - Computed daily simple returns for each asset
 - Constructed baseline portfolios with predefined weight allocations
-- Implemented a Monte Carlo simulation of 10,000 randomly generated portfolios (weights normalized to sum to 1)
+- Implemented a Monte Carlo simulation of 10000 randomly generated portfolios (weights normalized to sum to 1)
 - Calculated annualized return and volatility (assuming 252 trading days)
 - Evaluated portfolio performance using the Sharpe ratio
 - Visualized the efficient frontier and identified the maximum Sharpe ratio portfolio
