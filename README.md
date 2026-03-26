@@ -23,6 +23,8 @@ The goal is to identify optimal portfolios using the Sharpe ratio and visualize 
 - Evaluated portfolio performance using the Sharpe ratio
 - Visualized the efficient frontier and identified the maximum Sharpe ratio portfolio
 
+The Monte Carlo simulation uses a fixed random seed to ensure reproducibility of portfolio sampling and results.
+
 ---
 
 ## Mathematical Formulation
